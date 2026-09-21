@@ -1,0 +1,66 @@
+---
+title: HTML basic examples
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# HTML documents
+
+- All HTML documents must start with a document type declaration: `<!DOCTYPE html>`.
+- The HTML document itself begins with `<html>` and ends with `</html>`.
+- The visible part of the HTML is between `<body>` and `</body>`.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Page title</title>
+</head>
+<body>
+    <h1>My first heading</h1>
+    <p>My first paragraph</p>
+</body>
+</html>
+```
+
+# The `<!DOCTYPE>` declaration
+
+- The `<!DOCTYPE>` declaration represents the document type and helps browserss to display web pages correctly.
+- It must only appear once at the top of the page before any HTML tags
+- The `<!DOCTYPE>` declaration is not case sensitive
+- The `<!DOCTYPE>` declaration for HTML is:
+
+> `<!DOCTYPE html>`
+
+# HTML headings
+
+- HTML headings are defined with `<h1>` to `<h6>` tags.
+- `<h1>` defines the most important heading
+- `<h6>` defines the least important heading
+
+# HTML paragraphs
+
+- HTML paragraphs are defined with `<p>` tag
+
+# HTML links
+
+HTML links are defined with the `<a>` tag:
+
+- The link's destination is specified in the `href` attribute.
+- Attributes are used to provide additional information about HTML elements.
+
+# HTML images
+
+HTML images are defined with `<img>` tag:
+
+- The source file (`scr`), alternative text (`alt`), `width` and `height` are provided as attributes.
+- `alt` stands for **Alternative Text** where it provides a text description of the image for 3 critical reasons:
+
+  - Accesibility for visually impaired users
+  - The browser will dsiplay the `alt` text in place of a broken image box
+  - Search engine bots rely heavily on `alt` text to understand what the image contains and index it properly in search results

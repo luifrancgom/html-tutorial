@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 15px;">
+  <!-- Outermost HTML Box -->
+  <rect x="10" y="10" width="780" height="480" fill="#e9ecef" stroke="#495057" stroke-width="1.2"/>
+  <text x="25" y="35" fill="#212529">&lt;html&gt;</text>
+  <text x="25" y="475" fill="#212529">&lt;/html&gt;</text>
+
+  <!-- HEAD Box -->
+  <rect x="35" y="55" width="730" height="115" fill="#e9ecef" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="48" y="75" fill="#212529">&lt;head&gt;</text>
+  
+  <!-- TITLE Box -->
+  <rect x="65" y="95" width="670" height="32" fill="#e9ecef" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="80" y="116" fill="#212529">&lt;title&gt;Page title&lt;/title&gt;</text>
+  
+  <text x="48" y="155" fill="#212529">&lt;/head&gt;</text>
+
+  <!-- BODY Box -->
+  <rect x="35" y="185" width="730" height="260" fill="#e9ecef" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="48" y="205" fill="#212529">&lt;body&gt;</text>
+
+  <!-- White Viewport Container -->
+  <rect x="65" y="225" width="670" height="170" fill="#ffffff" stroke="#6c757d" stroke-width="1.2"/>
+  
+  <!-- H1 Box -->
+  <rect x="85" y="245" width="630" height="32" fill="#ffffff" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="100" y="266" fill="#212529">&lt;h1&gt;This is a heading&lt;/h1&gt;</text>
+
+  <!-- P1 Box -->
+  <rect x="85" y="295" width="630" height="32" fill="#ffffff" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="100" y="316" fill="#212529">&lt;p&gt;This is a paragraph.&lt;/p&gt;</text>
+
+  <!-- P2 Box -->
+  <rect x="85" y="345" width="630" height="32" fill="#ffffff" stroke="#6c757d" stroke-width="1.2"/>
+  <text x="100" y="366" fill="#212529">&lt;p&gt;This is another paragraph.&lt;/p&gt;</text>
+
+  <text x="48" y="425" fill="#212529">&lt;/body&gt;</text>
+</svg>

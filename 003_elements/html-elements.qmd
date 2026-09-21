@@ -1,0 +1,76 @@
+---
+title: HTML elements
+format: 
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# HTML elements
+
+The HTMl element is everything from the start to the end tag:
+
+> `<tagname>` Content goes here ... `</tagname>`
+
+# Nested HTML elements
+
+- HTML elements can be nested, which means that elements can contain other elements
+- All HTML documents consist of nested HTMl elements
+
+## Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My first heading</h1>
+    <p>My first paragraph</p>
+</body>
+</html>
+```
+
+- The `<html>` element is the root element and it defines the whole HTMl document
+- It has a start tag `<html>` and an end tag `</html>`
+- Then, inside the `<html>` element there is a `<body>` element
+- The `<body>` element defines the document's body
+- It has a start <body> and an end tag `</body>`
+- Then, inside the `<body>` element there are 2 elements:
+
+  - `<h1>`: defines a heading
+  - `<p>`: defines a paragraph
+
+# Never skip the end tag
+
+- Some HTML lements will display correctly, even if you forget the end tag
+- However, never rely on this! Unexpected results may occur if you forget the end tag
+
+# Empty HTML elements
+
+- HTML elements with no content are called empty elements
+- The `<br>` tag defines a line break and is an empty element without a closing tag
+
+# HTML is not case sensitive
+
+- HTML tags are not case sensitive:
+
+  - `<P>` means the same as `<p>`
+
+- The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML and demands lowercase for stricter document types like XHTML.
+
+# HTML tag reference
+
+|Tag             |Description                         |
+|:---------------|:-----------------------------------|
+|`<html>`        |Defines the root of an HTML document|
+|`<body>`        |Defines the document's body         |
+|`<h1>` to `<h6>`|Defines HTML headings               |
+
+: Examples of tag references {#tbl-exm-tag-ref-html}
+
+> For a complete list of all available tags, visit [HTML Tag Reference](https://www.w3schools.com/tags/default.asp)
