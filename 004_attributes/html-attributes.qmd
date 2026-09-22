@@ -1,0 +1,70 @@
+---
+title: HTML attributes
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# HTML attributes
+
+- All HTML elements can have attributes
+- Attributes provide additional information about elements
+- Attributes are always specifies in the start of the tag
+- Attributes usually come in `(name, value)` pairs like: `name="value"`
+
+# The `href` attribute
+
+The `<a>` tag defines a hyperlink. The `href` attribute specifies the URL of the page the link goes to.
+
+# The scr attribute
+
+The `<img>` tag is used to embed an image in an HTML page. The `src` attribute specifies the path ot the image to be displayed.
+
+The are two ways to specify the URL in the `src` attribute:
+
+1. **Absolute URL**: Links to an external image that is hosted on another website.
+
+   Example: `src="https://www.w3schools.com/images/img_girl.jpg"`
+
+   ::: {#nte-external-images .callout-note}
+   External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images. So, it can suddenly be removed or changed.
+   :::
+
+2. **Relative URL**: Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page.
+
+   Example: `src="../images/girl.jpg"`
+
+   ::: {#tip-relative-url .callout-tip}
+   It is almost always best to use relative URLs. They will not break if you change domain.
+   :::
+
+# The `width` and `height` attributes
+
+The `<img>` tag should also contain the `width` and `height` attributes, which specify the width and height of the image in pixels.
+
+# The `alt` attribute
+
+The required `alt` attribute for the `<img>` tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the `src` attribute, or if the user uses a screen reader.
+
+# The `style` attribute
+
+The `style` attribute is used to add styles to an element, such as color, font, size and more.
+
+# The `lang` attribute
+
+You should always include the `lang` attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+# Suggestions
+
+- We suggest always quote attribute values
+
+  - The HTML standard does not required quotes around attribute values.
+  - However, W3C recommends quotes in HTML and demands quotes for stricter document types like XHTML.
+
+# Single or double quotes
+
+Double quotes around attribute values are the most common in HTML but single quotes can also be used. 
+
+I some situations when the attribute value itself contains double quotes, it is necessary to use single quotes.
