@@ -1,0 +1,10 @@
+---
+title: HTML headings
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# HTML headings
