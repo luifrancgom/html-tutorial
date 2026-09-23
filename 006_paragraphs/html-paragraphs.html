@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HTML headings</title>
+<title>HTML paragraphs</title>
 <style>
 
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,41 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -2175,12 +2210,8 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#html-headings" id="toc-html-headings" class="nav-link active" data-scroll-target="#html-headings"><span class="header-section-number">1</span> HTML headings</a></li>
-  <li><a href="#headings-are-important" id="toc-headings-are-important" class="nav-link" data-scroll-target="#headings-are-important"><span class="header-section-number">2</span> Headings are important</a></li>
-  <li><a href="#bigger-headings" id="toc-bigger-headings" class="nav-link" data-scroll-target="#bigger-headings"><span class="header-section-number">3</span> Bigger headings</a></li>
-  <li><a href="#html-horizontal-rules" id="toc-html-horizontal-rules" class="nav-link" data-scroll-target="#html-horizontal-rules"><span class="header-section-number">4</span> HTML horizontal rules</a></li>
-  <li><a href="#html-line-breaks" id="toc-html-line-breaks" class="nav-link" data-scroll-target="#html-line-breaks"><span class="header-section-number">5</span> HTML line breaks</a></li>
-  <li><a href="#the-poem-problem" id="toc-the-poem-problem" class="nav-link" data-scroll-target="#the-poem-problem"><span class="header-section-number">6</span> The poem problem</a></li>
+  <li><a href="#html-paragraphs" id="toc-html-paragraphs" class="nav-link active" data-scroll-target="#html-paragraphs"><span class="header-section-number">1</span> HTML paragraphs</a></li>
+  <li><a href="#html-display" id="toc-html-display" class="nav-link" data-scroll-target="#html-display"><span class="header-section-number">2</span> HTML display</a></li>
   </ul>
 </nav>
 </div>
@@ -2188,7 +2219,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HTML headings</h1>
+<h1 class="title">HTML paragraphs</h1>
 </div>
 
 
@@ -2205,75 +2236,34 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="html-headings" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> HTML headings</h1>
+<section id="html-paragraphs" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> HTML paragraphs</h1>
 <ul>
-<li>HTML headings are defined width the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags</li>
-<li><code>&lt;h1&gt;</code> defines the most important heading.</li>
-<li><code>&lt;h6&gt;</code> defines the least important heading.</li>
+<li>The HTML <code>&lt;p&gt;</code> element defines a paragraph</li>
+<li>A paragraph always starts on a new line and browsers automatically add some white space (a margin) before and after a paragraph.</li>
 </ul>
 </section>
-<section id="headings-are-important" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Headings are important</h1>
-<p>Search engines use the headings to index the structure and content of your web pages.</p>
-<p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
-<p><code>&lt;h1&gt;</code> headings should be used for main headings, followed by <code>&lt;h2&gt;</code> headings, then the less important <code>&lt;h3&gt;</code>, and so on.</p>
-<p>For example:</p>
-<ul>
-<li><code>&lt;h1&gt;</code>: page title</li>
-<li><code>&lt;h2&gt;</code>: section titles</li>
-<li><code>&lt;h3&gt;</code>: sub-sections</li>
-</ul>
-<p>When using <code>&lt;code&gt;</code> in pure html remember the <strong>HTML Entities</strong> (or named character references). They always start with an ampersand (<code>&amp;</code>) and end with a semicolon <code>(;)</code>:</p>
-<ul>
-<li><code>lt</code>: <strong>l</strong>ess <strong>t</strong>han (<code>&lt;</code>: <code>&amp;lt;</code>)</li>
-<li><code>gt</code>: <strong>g</strong>reater <strong>t</strong>han (<code>&gt;</code>: <code>&amp;gt;</code>)</li>
-</ul>
-</section>
-<section id="bigger-headings" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Bigger headings</h1>
-<p>Each HTML heading has a default size. However, you can specify the size for any heading with the <code>style</code> attribute, using CSS <code>font-size</code> property.</p>
-</section>
-<section id="html-horizontal-rules" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> HTML horizontal rules</h1>
-<p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
-<p>The <code>&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML page.</p>
-<div id="nte-hr" class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note 1
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The tag <code>&lt;hr&gt;</code> stands for <strong>h</strong>orizontal <strong>r</strong>ule.</p>
-</div>
-</div>
-<p>The <code>&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
-</section>
-<section id="html-line-breaks" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> HTML line breaks</h1>
-<p>The HTML <code>&lt;br&gt;</code> element defines a line break.</p>
-<p>Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph.</p>
-<div id="nte-br" class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note 2
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The tag <code>&lt;br&gt;</code> stands for <strong>br</strong>eak.</p>
-</div>
-</div>
-<p>The <code>&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
-</section>
-<section id="the-poem-problem" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> The poem problem</h1>
+<section id="html-display" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> HTML display</h1>
+<p>You cannot be sure how HTML will be displayed.</p>
+<p>Large or small screens and resized windows will create different results.</p>
+<p>With HTML you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+<p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>This paragraph</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>contains a lot of lines</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>in the source code,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>but the browser</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>ignores it.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This paragraph</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>contains         a lot of spaces</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>in the source         code,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>but the        browser</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>ignores it.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 
 </main>
